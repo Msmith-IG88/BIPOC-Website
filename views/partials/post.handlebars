@@ -1,0 +1,22 @@
+<div class="post-container">
+  <div class="image-container">
+    <img src="{{imgURL}}" alt="{{name}}">
+  </div>
+  <div class="post-content">
+    <h2 class="feature-name">{{name}}</h2>
+    <h3 class="feature-role">{{role}}</h3>
+    <p class="feature-bio">
+      {{bio}}
+    </p>
+  </div>
+  <div class="feature-tags">
+    {{#each tag}}
+			<a href="#">{{this}}</a>
+
+		{{/each}}
+  </div>
+  <button class="feature-platform">
+    <a href="{{platformURL}}" target="_blank" rel="noopener noreferrer">Learn More</a>
+  </button>
+</div>
+

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Community and/or Resources</title>
+ 
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="communityStyle.css">
+
+    <script src="community.js" charset="utf-8" defer></script>
+  </head>
+  
+
+  <body>
+
+    <header>
+      <h1><a href="Home.html">BIPOC IN STEM</a></h1>
+      <div class="nav-right">
+        <a href="Home.html">Home</a>
+        <a href="About.html">About</a>
+        <a class="active" href="Community.html">Community</a>
+      </div>
+    </header>
+
+    <main class="content">
+
+      <aside class="animated fadeInUp" id="filter-container">
+        <div class="filter-set">
+          <div class="filter-element">
+            <select id="filter-feature" class="filter-option" name="filter-feature"> 
+              <option selected value="">All Community Posts</option>
+
+              <option value="Resource">Resources</option>
+              <option value="Event">Events</option>
+              <option value="Opportunity">Opportunites</option>
+            </select>
+          </div>
+
+          <button id="filter-button"><i class="fas fa-filter"></i> Filter</button>
+        </div>
+
+        
+<!--
+  <h4>Filters By Options</h4>
+        <div class="filter-set">
+          <div class="filter-element">
+            <select id="filter-feature" class="filter-option" name="filter-feature"> 
+            <select id="filter-type" class="filter-option" name="filter-type">
+              <option selected value="">Any</option>
+              <option>Resources</option>
+              <option>Events</option>
+              <option>Opportunites</option>
+            </select>
+          </div>
+      
+
+        <button id="filter-button">Search</button>
+-->
+      </aside>
+
+      <section id="posts">
+
+        <div class="post" data-postname="Oregon State University Cultural Centers" data-posttype='["Resource"]'>
+          <h2 class="post-name">Oregon State University Cultural Centers</h2>
+          <h3 class="post-type">Resource</h3>
+          <p class="post-summary">
+            The centers provide support services to on-campus and online students, as well as opportunities for all members of the OSU community to learn about different cultures and communities in a safer environment. Events and activities at the centers include national history and heritage month programs, social justice workshops, cultural holiday celebrations, cooking demonstrations, craft nights, and many other programs. All are welcome to join - even from a distance. If you would like to be connected to our resources from afar, please let us know, and we will work to include you in our efforts.
+          </p>
+    		  <button class="community-link"><a href="https://dce.oregonstate.edu/cultural-resource-centers" target="_blank" rel="noopener noreferrer">Learn More</a></button>
+        </div>
+
+        <div class="post" data-postname="Oregon State University Cultural Centers" data-posttype='["Resource"]'>
+          <h2 class="post-name">Oregon State University Cultural Centers</h2>
+
+          <h3 class="post-type">Event</h3>
+          <p class="post-summary">
+            The centers provide support services to on-campus and online students, as well as opportunities for all members of the OSU community to learn about different cultures and communities in a safer environment. Events and activities at the centers include national history and heritage month programs, social justice workshops, cultural holiday celebrations, cooking demonstrations, craft nights, and many other programs. All are welcome to join - even from a distance. If you would like to be connected to our resources from afar, please let us know, and we will work to include you in our efforts.
+          </p>
+    		  <button class="community-link"><a href="https://dce.oregonstate.edu/cultural-resource-centers" target="_blank" rel="noopener noreferrer">Learn More</a></button>
+        </div>
+
+        <div class="post" data-postname="Oregon State University Cultural Centers" data-posttype='["Resource"]'>
+          <h2 class="post-name">Oregon State University Cultural Centers</h2>
+
+          <h3 class="post-type">Opportunity</h3>
+          <p class="post-summary">
+            The centers provide support services to on-campus and online students, as well as opportunities for all members of the OSU community to learn about different cultures and communities in a safer environment. Events and activities at the centers include national history and heritage month programs, social justice workshops, cultural holiday celebrations, cooking demonstrations, craft nights, and many other programs. All are welcome to join - even from a distance. If you would like to be connected to our resources from afar, please let us know, and we will work to include you in our efforts.
+          </p>
+    		  <button class="community-link"><a href="https://dce.oregonstate.edu/cultural-resource-centers" target="_blank" rel="noopener noreferrer">Learn More</a></button>
+        </div>
+
+      </section>
+
+    </main>
+
+    <button type="button" id="new-post-button"><i class="fas fa-plus"></i></button>
+
+    <div id="modal-background" class="hide"></div>
+
+    <div id="add-community-modal" class="hide">
+
+      <div class="modal-content">
+
+        <div class="modal-title">
+          <h2>Add a Community Post</h2>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="modal-input-container">
+            <label for="post-name-input">Name</label>
+            <input type="text" id="post-name-input">
+          </div>
+
+          <div class="modal-input-container">
+            <label for="post-description-input">Description</label>
+            <input type="text" id="post-description-input">
+          </div>
+
+          <div class="modal-input-container">
+            <label for="post-link-input">Link</label>
+            <input type="text" id="post-link-input">
+          </div>
+
+          <div class="modal-input-container">
+            <fieldset id="modal-post-input" class="post-fieldset">
+              <legend>Resource Type</legend>
+                <div class="modal-post-container">
+                  <input type="radio" name="modal-post" id="modal-post-Resource" value="Resource">
+                  <label for="modal-post-Resource">Resource</label>
+                </div>
+
+                <div class="modal-post-container">
+                  <input type="radio" name="modal-post" id="modal-post-Event" value="Event">
+                  <label for="modal-post-Event">Event</label>
+                </div>
+
+                <div class="modal-post-container">
+                  <input type="radio" name="modal-post" id="modal-post-Opportunity" value="Opportunity">
+                  <label for="modal-post-Opportunity">Opportunity</label>
+                </div>
+            </fieldset>
+          </div>
+
+        </div>
+  
+        <div class="modal-foot">
+
+          <div class="modal-button-container">
+            <button type="button" id="modal-cancel-button">Cancel</button>
+          </div>
+          
+          <div class="modal-button-container">
+            <button type="button" id="modal-accept-button">Accept</button>
+          </div>
+
+        </div>
+          
+      </div>
+
+    </div>
+
+  </body>
+</html>

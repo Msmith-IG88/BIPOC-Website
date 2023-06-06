@@ -1,0 +1,452 @@
+body {
+    color: #353B3C;
+    font-family: 'Asap', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(42, 42, 114, 0.5);
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+}
+
+header h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
+header a {
+    float: left;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav-right a.active {
+    color: #F3DE8A;
+}
+
+header a:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+.nav-right {
+    float: right;
+}
+
+/*COVER-FILTER SECTION*/
+aside {
+    position: relative;
+    /*z-index: -1;*/
+    width: 100%;
+    height: 240px;
+    background-image: url("https://images.pexels.com/photos/2351722/pexels-photo-2351722.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260 2520w");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.filter-set {
+    width: 80%;
+    padding: 0px 15px 0px 15px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+.filter-element {
+    width: 80%;
+    display: inline-block;
+    margin: 0px;
+    position: relative;
+    width: 80%;
+    top: 50%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px;
+}
+
+select {
+    width: 100%;
+    height: 50px;
+    color: #353B3C;
+    background-color: #FFFFFF;
+    border-radius: 10px 0px 0px 10px;
+    padding: 5px 5px 5px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0px;
+
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	 -o-appearance: none;
+		appearance: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+.filter-element:after {
+    font-family: FontAwesome;
+  	content: '\f107';
+  	font-size: 28px;
+  	position: absolute;
+  	top: 12px;
+  	right: 20px;
+  	color: #434B67;
+  	pointer-events: none;
+}
+
+#filter-button {
+    display: inline-block;
+    position: absolute;
+    width: 15%;
+    height: 50px;
+    color: #FFFFFF;
+    background-color: indigo;
+    border: 0px;
+    border-radius: 0px 10px 10px 0px;
+    font-size: 18px;
+}
+
+#filter-button:hover{
+    background-color: blueviolet;
+}
+
+#filter-button:focus{
+    outline: none;
+}
+
+#posts {
+    padding: 16px 32px 16px 32px;
+    overflow: hidden;
+}
+
+.post {
+    display: inline-block;
+    width: 90%;
+    background-color: #FFFFFF;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px rgb(0, 0, 0, 0.33);
+    padding: 20px 20px 20px 20px;
+}
+
+.post-name {
+    font-weight: bold;
+    color: indigo;
+    font-size: 24px;
+}
+
+.community-link {
+    height: 40px;
+    color: white;
+    background-color: indigo;
+    font-size: 20px;
+    margin: 10px 0px 5px 0px;
+    border-radius: 10px;
+    border: 0px;
+}
+
+.community-link:focus {
+  outline: none;
+}
+
+.community-link a {
+    color: white;
+    padding: 5px 10px 5px 10px;
+}
+
+.community-link a:link {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: #8B1EB2;
+    text-decoration: none;
+}
+
+.community-link a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#new-post-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 100px;
+    background-color: lightseagreen;
+    color: white;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    border: 0px;
+    box-shadow: 3px 3px 8px rgb(0,0,10,0.33);
+}
+
+#new-post-button:hover {
+    background-color: blueviolet;
+    height: 70px;
+    width: 70px;
+}
+
+#new-post-button:focus {
+    outline: none;
+}
+/*Animation*/
+body {
+    /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+    -webkit-backface-visibility: hidden;
+    background-color: #D5D5F4;
+  }
+  
+  .animated {
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity: 0; 
+    }
+  
+    100% {
+      opacity: 1; 
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    } 
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    -moz-animation-name: fadeIn;
+    -o-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  
+  /* 1 */
+  @-webkit-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+    }
+  }
+  
+  @-moz-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -moz-transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      -moz-transform: translateY(0);
+    }
+  }
+  
+  @-o-keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -o-transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      -o-transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    -moz-animation-name: fadeInUp;
+    -o-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    }
+
+  /*Modal stuff*/
+  #modal-background {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.90);
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #add-community-modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1010;
+    overflow: scroll;
+  }
+
+  .modal-content {
+    width: 430px;
+    height: 380px;
+
+    margin: 60px auto;
+    background-color: white;
+    border-radius: 20px;
+  }
+
+  .modal-title {
+    text-align: center;
+    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    padding: 10px;
+    background-color: indigo;
+    color: white;
+  }
+
+  .modal-body {
+    margin: 8px;
+  }
+
+  .modal-input-container {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .modal-input-container > label {
+    flex: 115px; 
+    font-size: 18px;
+  }
+
+  .modal-input-container input {
+    flex: 350px; 
+    border-radius: 5px;
+    border-width: 1px;
+    border-color: black;
+    height: 30px;
+  }
+
+  legend {
+    font-size: 18px;
+  }
+  
+  .modal-foot {
+    display: flex;
+  }
+
+  #modal-cancel-button {
+    font-size: 18px;
+    height: 50px;
+    width: 100px;
+    margin-left: 90px;
+    margin-right: 20px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: lightgray;
+    color: black;
+  }
+
+  #modal-accept-button {
+    font-size: 18px;
+    height: 50px;
+    width: 100px;
+    margin-right: 80px;
+    margin-left: 20px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    border-width: 0px;
+    background-color: indigo;
+    color: white;
+  }
+
+  #modal-cancel-button:hover {
+    background-color: gray;
+    color: white;
+  }
+
+  #modal-accept-button:hover {
+    background-color: blueviolet;
+  }
+
+  .modal-post-container {
+    display: inline-block;
+    margin-right: 26px;
+  }
+
+  input[type=radio] {
+    vertical-align: middle;
+    width: 20px;
+
+  }
+
+  /*for filtering posts*/
+  .hidePost {
+    display: none;
+
+  }

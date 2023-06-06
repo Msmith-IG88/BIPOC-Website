@@ -1,0 +1,26 @@
+<main class="content">
+
+    <section class="title-container animated fadeInUp">
+        <div class="about">
+            <h2>About Us</h2>
+            <p>
+                BIPOC in STEM believes that anyone can make a career in STEM. We recognize that there is a serious lack of representation in the STEM field, but we hope to change that by providing a platform that gives voice and recognition to people of color and other marginalized communities making huge impacts in the field. We also share events and other opportunities to build an online community and to provide resources for BIPOC interested in starting their STEM career. We hope that you will contribute to our effort and help transoform the community!
+            </p>
+        </div>
+    </section>
+
+	<div class="section-title">
+		<h2>Meet Our Team</h2>
+	</div>
+		
+    <div id="team">
+        
+        {{#each person}}
+            {{> teamCard}}
+        {{/each}}
+
+    </div>
+ 	
+
+
+</main>

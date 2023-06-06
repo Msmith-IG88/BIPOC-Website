@@ -1,0 +1,94 @@
+<main class="content">
+
+    <aside class="animated fadeInUp" id="filter-container">
+        <div class="filter-set">
+          <div class="filter-element">
+            <select id="filter-feature" class="filter-option" name="filter-feature"> 
+              <option selected value="">All Feature Posts</option>
+              <option>Educators</option>
+              <option>Youtubers</option>
+              <option>Instagram Influencers</option>
+              <option>Entrepreneurs</option>
+              <option>Students & Professionals in the Field</option>
+              <option>Community Leaders & Advocates</option>
+              <option>Historical Figures</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <button id="filter-button"><i class="fas fa-filter"></i> Filter</button>
+        </div>
+    </aside>
+
+    <section id="posts">
+        {{#each postCards}}
+            {{> post}}
+        {{/each}}
+    </section>
+
+</main>
+
+<button type="button" id="new-post-button"><i class="fas fa-plus"></i></button>
+
+<div id="modal-background" class="hide"></div>
+
+<div id="add-person-modal" class="hide">
+
+    <div class="modal-content">
+
+        <div class="modal-title">
+          <h2>Add a STEM BIPOC Individual</h2>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="modal-input-container">
+            <label for="person-image-input">Picture URL</label>
+            <input type="text" id="person-image-input">
+          </div>
+
+          <div class="modal-input-container">
+            <label for="person-name-input">Name</label>
+            <input type="text" id="person-name-input">
+          </div>
+
+          <div class="modal-input-container">
+            <label for="person-role-input">STEM Role(s)</label>
+            <input type="text" id="person-role-input">
+          </div>
+
+          <div class="modal-input-container">
+            <label for="person-bio-input">Description</label>
+            <input type="text" id="person-bio-input">
+          </div>
+
+          <div class="modal-input-container">
+            <label for="person-link-input">Link</label>
+            <input type="text" id="person-link-input">
+          </div>
+
+          <div class="modal-input-container">
+            <fieldset id="modal-tags-input" class="tags-fieldset">
+              <legend>Tag(s)</legend>
+                {{#each tags}}
+                    {{> featureModalTags}}
+                {{/each}}
+            </fieldset>
+          </div>
+
+        </div>
+  
+        <div class="modal-foot">
+
+          <div class="modal-button-container">
+            <button type="button" id="modal-cancel-button">Cancel</button>
+          </div>
+          
+          <div class="modal-button-container">
+            <button type="button" id="modal-accept-button">Accept</button>
+          </div>
+
+        </div>
+          
+    </div>
+
+</div>

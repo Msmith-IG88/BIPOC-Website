@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>BIPOC IN STEM</title>
+   
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab:100" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="homeStyle.css">
+
+    <script src="home.js" charset="utf-8" defer></script>
+  </head>
+  
+  <body>
+
+    <header>
+      <h1><a href="Home.html">BIPOC IN STEM</a></h1>
+      <div class="nav-right">
+        <a class="active" href="Home.html">Home</a>
+        <a href="About.html">About</a>
+        <a href="Community.html">Community</a>
+      </div>
+    </header>
+
+    <main class="content">
+
+      <aside class="animated fadeInUp" id="filter-container">
+        <div class="filter-set">
+          <div class="filter-element">
+            <select id="filter-feature" class="filter-option" name="filter-feature"> 
+              <option selected value="">All Feature Posts</option>
+              <option value="#Educator">Educators</option>
+              <option value="#YouTuber">Youtubers</option>
+              <option value="#Influencer">Instagram Influencers</option>
+              <option value="#Entrepeneur">Entrepreneurs</option>
+              <option value="#Professional">Students & Professionals in the Field</option>
+              <option value="#STEMAdvocate">Community Leaders & Advocates</option>
+              <option value="#Historical">Historical Figures</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <button id="filter-button"><i class="fas fa-filter"></i> Filter</button>
+        </div>
+      </aside>
+
+      <!-- <aside class="filter-container">
+
+        <h4>Filters By Feature Type</h4>
+
+          <div class="filter-element">
+            <select id="filter-feature" class="filter-option" name="filter-feature">
+              <option selected value="">Any</option>
+              <option>Educators</option>
+              <option>Youtubers</option>
+              <option>Instagram Influencers</option>
+              <option>Entrepreneurs</option>
+              <option>Students & Professionals in the Field</option>
+              <option>Other</option>
+              <option>Community Leaders & Advocates</option>
+              <option>Historical Figures</option>
+            </select>
+          </div>
+      
+
+        <button id="filter-button">Search</button>
+
+      </aside> -->
+
+      <section id="posts">
+
+        <div class="post-container">
+          <div class="image-container">
+            <img src="https://image.cnbcfm.com/api/v1/image/106437226-10_chapter_opportunities.00_05_59_08.still012.jpg?w=1910&amp;h=1000" alt="Bukola Ayodele">
+          </div>
+          <div class="post-content">
+            <h2 class="feature-name">Bukola Ayodele</h2>
+            <h3 class="feature-role">Software Engineer & Content Creator</h3>
+            <p class="feature-bio">
+              Bukola Ayodele is a Software Engineer and Content Creator based in NYC. Using her YouTube channel, Bukola shares her experience as a Black woman in the computer science fields and provides tips and advice for those interested in tech.
+            </p>
+          </div>
+          <div class="feature-tags">
+            <span>#YouTuber</span>
+            <span>#Professional</span>
+          </div>
+          <button class="feature-platform"><a href="https://www.youtube.com/channel/UC-bFgwL_kFKLZA60AiB-CCQ/featured" target="_blank" rel="noopener noreferrer">Learn More</a></button>
+        </div>
+
+        <div class="post-container">
+          <div class="image-container">
+            <img src="https://shivalikadamcom.files.wordpress.com/2020/01/cropped-img_3160-e1579767655370.jpg?w=770&h=500&crop=1" alt="Shivali Kadam">
+          </div>
+          <div class="post-content">
+            <h2 class="feature-name">Shivali Kadam</h2>
+            <h3 class="feature-role">Process Engineer</h3>
+            <p class="feature-bio">
+              Shivali Kadam is a process engineer and Stem advocate living in Portland, OR. Born in Mumbai, India, she immigrated to the United States at the age of two with her parents. As a female engineer, she is passionate about increasing youth access to STEM outreach programming and serves on the Outreach & Education Committee of Women in Science PDX. She is currently serving as Miss Oregon and using her title to promote her social impact initiative, STEMpowered: Inspiring the Next Generation of Female Engineers and Scientists.
+            </p>
+          </div>
+          <div class="feature-tags">
+            <span>#STEMAdvocate</span>
+            <span>#Professional</span>
+          </div>
+          <button class="feature-platform"><a href="https://shivalikadam.com" target="_blank" rel="noopener noreferrer">Learn More</a></button>
+        </div>
+
+        <!-- <div class="post"
+		data-postname="Shivali Kadam"
+		data-postrole="Process Engineer"
+		data-postfeatures='["STEM Advocate","Professional"]'>
+		
+            <div class="post-image">
+                <span class="post-name">Shivali Kadam<br></span>
+              <img src="https://shivalikadamcom.files.wordpress.com/2020/01/cropped-img_3160-e1579767655370.jpg?w=770&h=500&crop=1">
+            </div>
+          	<span class="postfeatures"><br> STEM Advocate <br> Professional <br><br> </span>
+
+		<span class="post-summary">Shivali Kadam is a process engineer and Stem advocate living in Portland, OR. Born in Mumbai, India, she immigrated to the United States at the age of two with her parents. As a female engineer, she is passionate about increasing youth access to STEM outreach programming and serves on the Outreach & Education Committee of Women in Science PDX. She is currently serving as Miss Oregon and using her title to promote her social impact initiative, STEMpowered: Inspiring the Next Generation of Female Engineers and Scientists.</span>
+		<a href="https://shivalikadam.com/" class="platform-link">shivalikadam.com</a>
+        </div> -->
+
+        <div class="post-container">
+          <div class="image-container">
+            <img src="https://images.squarespace-cdn.com/content/v1/5ab430aeb40b9d5b1e973073/1563901244017-4UXKBI60FCDOIMCSHC71/ke17ZwdGBToddI8pDm48kK60W-ob1oA2Fm-j4E_9NQB7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0peuRriT5ozTlIv33RH5i-rgoxFbWdTFwwOOwb-LfzCHccfKZtuu0_3JXB1avmQYUg/shannon3.png" alt="Shannon Li">
+          </div>
+          <div class="post-content">
+            <h2 class="feature-name">Shannon Li</h2>
+            <h3 class="feature-role">UX/UI Engineer & Software Engineer</h3>
+            <p class="feature-bio">
+              Shannon Li is working towards a career in UX and data science. She identifies as a design activist who aims to make design and technology inclusive. As a queer woman of color, Shannon recognizes the importance of intersectionality and advocating for social justice through her work.
+            </p>
+          </div>
+          <div class="feature-tags">
+            <span>#STEMAdvocate</span>
+            <span>#Professional</span>
+          </div>
+          <button class="feature-platform"><a href="https://www.shannonli.me" target="_blank" rel="noopener noreferrer">Learn More</a></button>
+        </div>
+      </section>
+
+    </main>
+
+    <button type="button" id="new-post-button"><i class="fas fa-plus"></i></button>
+
+    <div id="modal-background" class="hide"></div>
+
+    <div id="add-person-modal" class="hide">
+
+      <div class="modal-content">
+
+        <div class="modal-title">
+          <h2>Add a STEM BIPOC Individual</h2>
+        </div>
+
+        <div class="modal-body">
+
+          <div class="modal-input-container">
+            <label for="person-image-input">Picture URL</label>
+            <input type="text" id="person-image-input">
+          </div>
+
+          <div class="modal-input-container">
+            <label for="person-name-input">Name</label>
+            <input type="text" id="person-name-input">
+          </div>
+
+          <div class="modal-input-container">
+            <label for="person-role-input">STEM Role(s)</label>
+            <input type="text" id="person-role-input">
+          </div>
+
+          <div class="modal-input-container">
+            <label for="person-bio-input">Description</label>
+            <input type="text" id="person-bio-input">
+          </div>
+
+          <div class="modal-input-container">
+            <label for="person-link-input">Link</label>
+            <input type="text" id="person-link-input">
+          </div>
+
+          <div class="modal-input-container">
+            <fieldset id="modal-tags-input" class="tags-fieldset">
+              <legend>Tag(s)</legend>
+                <div class="modal-tag-container">
+                  <input type="checkbox" name="modal-tag" id="modal-tag-Instagram" value="Instagram">
+                  <label for="modal-tag-Instagram">Instagram</label>
+                </div>
+
+                <div class="modal-tag-container">
+                  <input type="checkbox" name="modal-tag" id="modal-tag-YouTuber" value="YouTuber">
+                  <label for="modal-tag-YouTuber">YouTube</label>
+                </div>
+
+                <div class="modal-tag-container">
+                  <input type="checkbox" name="modal-tag" id="modal-tag-Entrepeneur" value="Entrepeneur">
+                  <label for="modal-tag_Entrepeneur">Entrepeneur</label>
+                </div>
+
+                <div class="modal-tag-container">
+                  <input type="checkbox" name="modal-tag" id="modal-tag-Historical" value="Historical">
+                  <label for="modal-tag-Historical">Historical</label>
+                </div>
+
+                <div class="modal-tag-container">
+                  <input type="checkbox" name="modal-tag" id="modal-tag-Educator" value="Educator">
+                  <label for="modal-tag-Educator">Educator</label>
+                </div>
+
+                <div class="modal-tag-container">
+                  <input type="checkbox" name="modal-tag" id="modal-tag-Professional" value="Professional">
+                  <label for="modal-tag-Professional">Professional</label>
+                </div>
+
+                <div class="modal-tag-container">
+                  <input type="checkbox" name="modal-tag" id="modal-tag-Leader" value="Leader">
+                  <label for="modal-tag-Leader">Leader</label>
+                </div>
+            </fieldset>
+          </div>
+
+        </div>
+  
+        <div class="modal-foot">
+
+          <div class="modal-button-container">
+            <button type="button" id="modal-cancel-button">Cancel</button>
+          </div>
+          
+          <div class="modal-button-container">
+            <button type="button" id="modal-accept-button">Accept</button>
+          </div>
+
+        </div>
+          
+      </div>
+
+    </div>
+   
+
+  </body>
+</html>

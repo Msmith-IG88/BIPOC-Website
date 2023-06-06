@@ -1,0 +1,95 @@
+<main class="content">
+
+    <aside class="animated fadeInUp" id="filter-container">
+        <div class="filter-set">
+            <div class="filter-element">
+                <select id="filter-feature" class="filter-option" name="filter-feature"> 
+                    <option selected value="">All Community Posts</option>
+                    <option>Resources</option>
+                    <option>Events</option>
+                    <option>Opportunites</option>
+                </select>
+            </div>
+            <button id="filter-button"><i class="fas fa-filter"></i> Filter</button>
+        </div>
+    </aside>
+
+    <section id="posts">
+
+        {{#each posts}}
+            {{> comPost}}
+
+        {{/each}}
+
+    </section>
+
+</main>
+
+<button type="button" id="new-post-button"><i class="fas fa-plus"></i></button>
+
+<div id="modal-background" class="hide"></div>
+
+<div id="add-community-modal" class="hide">
+
+    <div class="modal-content">
+
+        <div class="modal-title">
+            <h2>Add a Community Post</h2>
+        </div>
+
+        <div class="modal-body">
+
+            <div class="modal-input-container">
+                <label for="post-name-input">Name</label>
+                <input type="text" id="post-name-input">
+            </div>
+
+            <div class="modal-input-container">
+                <label for="post-description-input">Description</label>
+                <input type="text" id="post-description-input">
+            </div>
+
+            <div class="modal-input-container">
+                <label for="post-link-input">Link</label>
+                <input type="text" id="post-link-input">
+            </div>
+
+            <div class="modal-input-container">
+                <fieldset id="modal-post-input" class="post-fieldset">
+                    <legend>Resource Type</legend>
+                    <div class="modal-post-container">
+                        <input type="radio" name="modal-post" id="modal-post-Resource" value="Resource">
+                        <label for="modal-post-Resource">Resource</label>
+                    </div>
+
+                    <div class="modal-post-container">
+                        <input type="radio" name="modal-post" id="modal-post-Event" value="Event">
+                        <label for="modal-post-Event">Event</label>
+                    </div>
+
+                    <div class="modal-post-container">
+                        <input type="radio" name="modal-post" id="modal-post-Opportunity" value="Opportunity">
+                        <label for="modal-post-Opportunity">Opportunity</label>
+                    </div>
+                </fieldset>
+            </div>
+
+        </div>
+
+        <div class="modal-foot">
+
+            <div class="modal-button-container">
+            <button type="button" id="modal-cancel-button">Cancel</button>
+            </div>
+            
+            <div class="modal-button-container">
+            <button type="button" id="modal-accept-button">Accept</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
